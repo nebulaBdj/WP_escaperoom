@@ -225,6 +225,7 @@
   <ItemGroup>
     <Image Include="res\ROOMESCAPE.ico" />
     <Image Include="res\ROOMESCAPEDoc.ico" />
+    <Image Include="res\secret_room5.bmp" />
     <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

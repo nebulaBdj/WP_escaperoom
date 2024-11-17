@@ -85,7 +85,7 @@ void CDlg_tabControls::OnSelchangeTabcontrol(NMHDR* pNMHDR, LRESULT* pResult)
 		int select = m_tabControl.GetCurSel();
 
 		switch (select) {
-		case 0: //현관
+		case 0: //현관, 탭컨트롤 값이 0이면 현관을 보여줌
 			dlg_doorStep->ShowWindow(SW_SHOW);
 			dlg_bedRoom->ShowWindow(SW_HIDE);
 			dlg_library->ShowWindow(SW_HIDE);
