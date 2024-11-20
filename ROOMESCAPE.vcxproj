@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CDlgLetter.h" />
     <ClInclude Include="CDlg_bedRoom.h" />
     <ClInclude Include="CDlg_doorStep.h" />
     <ClInclude Include="CDlg_library.h" />
@@ -199,6 +200,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CDlgLetter.cpp" />
     <ClCompile Include="CDlg_bedRoom.cpp" />
     <ClCompile Include="CDlg_doorStep.cpp" />
     <ClCompile Include="CDlg_library.cpp" />
@@ -223,10 +225,13 @@
     <None Include="res\ROOMESCAPE.rc2" />
   </ItemGroup>
   <ItemGroup>
+
     <Image Include="res\doorStep_Image.bmp" />
+    <Image Include="res\secret_room5.bmp" />
+    <Image Include="res\MMMMAAAINHALLBMP.bmp" />
     <Image Include="res\ROOMESCAPE.ico" />
     <Image Include="res\ROOMESCAPEDoc.ico" />
-    <Image Include="res\secret_room5.bmp" />
+    <Image Include="res\Talyer_letter.bmp" />
     <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

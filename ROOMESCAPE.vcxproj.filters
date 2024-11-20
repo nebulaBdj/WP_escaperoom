@@ -57,6 +57,9 @@
     <ClInclude Include="CDlg_tabControls.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CDlgLetter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ROOMESCAPE.cpp">
@@ -92,6 +95,9 @@
     <ClCompile Include="CDlg_tabControls.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="CDlgLetter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ROOMESCAPE.rc">
@@ -113,10 +119,15 @@
     <Image Include="res\Toolbar.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
+
     <Image Include="res\secret_room5.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="res\doorStep_Image.bmp">
+    <Image Include="res\Talyer_letter.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\MMMMAAAINHALLBMP.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

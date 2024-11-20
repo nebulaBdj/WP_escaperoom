@@ -41,9 +41,13 @@ BOOL CDlg_tabControls::OnInitDialog()
 	//int screenHeight = GetSystemMetrics(SM_CYSCREEN);
 
 	// SetWindowPos 함수로 다이얼로그를 화면 크기로 설정
-	//SetWindowPos(NULL, 0, 0, screenWidth, screenHeight, SWP_NOZORDER);
-	SetWindowPos(NULL, 0, 0, 1600, 900, SWP_NOMOVE | SWP_NOZORDER);
-	//m_tabControl.GetWindowRect(&rect);
+
+	SetWindowPos(NULL, 0, 0, 1600, 800, SWP_NOZORDER);
+
+	CRect rect(0, 0, 1600, 800);
+	m_tabControl.MoveWindow(&rect);
+	m_tabControl.GetClientRect(&rect);
+
 
 	m_tabControl.InsertItem(0, _T("현관"));
 	m_tabControl.InsertItem(1, _T("침실"));
