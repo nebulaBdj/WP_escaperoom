@@ -119,6 +119,11 @@
     <Image Include="res\Toolbar.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
+
+    <Image Include="res\secret_room5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\doorStep_Image.bmp">
     <Image Include="res\Talyer_letter.bmp">
       <Filter>리소스 파일</Filter>
     </Image>

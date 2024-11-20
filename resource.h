@@ -12,6 +12,9 @@
 #define IDD_DIG_BEDROOM                 312
 #define IDD_DLG_LIBRARY                 313
 #define IDD_DLG_SECRETROOM              314
+#define IDB_BITMAP_SECRETROOM           320
+#define IDB_BITMAP_DOORSTEP             321
+#define IDC_STATIC_SECRET_PICTURECONTROL 1001
 #define IDB_BITMAP3                     322
 #define IDD_DIALOG1                     323
 #define IDB_BITMAP5                     326
@@ -24,9 +27,12 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        327
+
+#define _APS_NEXT_RESOURCE_VALUE        322
 #define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1002
 #define _APS_NEXT_CONTROL_VALUE         1004
+
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif
