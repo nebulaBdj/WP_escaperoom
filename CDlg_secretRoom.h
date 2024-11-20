@@ -21,4 +21,13 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
 
 	DECLARE_MESSAGE_MAP()
+public:
+	CStatic m_secret_pictureControl;
+	CRect m_clickableRect;
+	int is_hover = false;
+	virtual BOOL OnInitDialog();
+	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
+	afx_msg void OnPaint();
+	afx_msg BOOL OnSetCursor(CWnd* pWnd, UINT nHitTest, UINT message);
+	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
 };

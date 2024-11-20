@@ -223,6 +223,7 @@
     <None Include="res\ROOMESCAPE.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\doorStep_Image.bmp" />
     <Image Include="res\ROOMESCAPE.ico" />
     <Image Include="res\ROOMESCAPEDoc.ico" />
     <Image Include="res\secret_room5.bmp" />

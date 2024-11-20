@@ -116,5 +116,8 @@
     <Image Include="res\secret_room5.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
+    <Image Include="res\doorStep_Image.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
   </ItemGroup>
 </Project>
