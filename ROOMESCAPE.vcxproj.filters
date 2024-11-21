@@ -63,6 +63,12 @@
     <ClInclude Include="CDlg_ending2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CDlg_bedroom_safety.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlg_bedroom_quiz.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ROOMESCAPE.cpp">
@@ -102,6 +108,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CDlg_ending2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_bedroom_safety.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_bedroom_quiz.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -153,6 +165,12 @@
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="res\mirror_text44.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Bedroom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Bedroom_Safety.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

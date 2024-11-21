@@ -184,6 +184,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CDlg_bedRoom.h" />
+    <ClInclude Include="CDlg_bedroom_quiz.h" />
+    <ClInclude Include="CDlg_bedroom_safety.h" />
     <ClInclude Include="CDlg_doorStep.h" />
     <ClInclude Include="CDlg_ending.h" />
     <ClInclude Include="CDlg_ending2.h" />
@@ -202,6 +204,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDlg_bedRoom.cpp" />
+    <ClCompile Include="CDlg_bedroom_quiz.cpp" />
+    <ClCompile Include="CDlg_bedroom_safety.cpp" />
     <ClCompile Include="CDlg_doorStep.cpp" />
     <ClCompile Include="CDlg_ending.cpp" />
     <ClCompile Include="CDlg_ending2.cpp" />
@@ -227,6 +231,8 @@
     <None Include="res\ROOMESCAPE.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\Bedroom.bmp" />
+    <Image Include="res\Bedroom_Safety.bmp" />
     <Image Include="res\doorStep_Image.bmp" />
     <Image Include="res\magic_mirror2.bmp" />
     <Image Include="res\magic_mirror2.png" />
