@@ -81,6 +81,12 @@
     <ClInclude Include="CDlg_library_mirror.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CDlgMirror.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgLetter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ROOMESCAPE.cpp">
@@ -138,6 +144,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CDlg_library_mirror.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgMirror.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgLetter.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -210,6 +222,15 @@
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="res\Library_Safe.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BrokenMirror.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\MMMMAAAINHALLBMP.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Talyer_letter.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>
