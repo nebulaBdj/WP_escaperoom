@@ -15,17 +15,32 @@
 #define IDB_BITMAP_SECRETROOM           320
 #define IDB_BITMAP1                     321
 #define IDB_BITMAP_DOORSTEP             321
+#define IDD_DIALOG_ENDING               322
+#define IDB_BITMAP_MAGICMIRROR          326
+#define IDB_BITMAP_MIRRORTEXT1          327
+#define IDB_BITMAP_MIRRORTEXT11         330
+#define IDB_BITMAP_MIRRORTEXT22         331
+#define IDB_BITMAP_MIRRORTEXT33         332
+#define IDB_BITMAP_MIRRORTEXT44         333
+#define IDD_DIALOG1                     334
+#define IDD_DIALOG_ENDING2              334
 #define IDC_TAB1                        1000
 #define IDC_TABCONTROL                  1000
 #define IDC_STATIC_SECRET_PICTURECONTROL 1001
+#define IDC_STATIC_MAGICMIRROR          1002
+#define IDC_STATIC_MIRRORTEXTBOX        1003
+#define IDC_BUTTON_ENDING_NEXT          1004
+#define IDC_BUTTON_ENDING_PREV          1005
+#define IDC_BUTTON_ENDING_ACTION1       1006
+#define IDC_BUTTON_ENDING_ACTION2       1007
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        322
+#define _APS_NEXT_RESOURCE_VALUE        336
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1002
+#define _APS_NEXT_CONTROL_VALUE         1008
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

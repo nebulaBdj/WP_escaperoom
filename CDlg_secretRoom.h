@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include "afxdialogex.h"
-
+#include "CDlg_ending.h"
 
 // CDlg_secretRoom 대화 상자
 
@@ -22,6 +22,7 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
+	CDlg_ending* dlg_ending;
 	CStatic m_secret_pictureControl;
 	CRect m_clickableRect;
 	int is_hover = false;

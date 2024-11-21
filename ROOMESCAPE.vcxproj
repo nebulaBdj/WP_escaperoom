@@ -185,6 +185,8 @@
   <ItemGroup>
     <ClInclude Include="CDlg_bedRoom.h" />
     <ClInclude Include="CDlg_doorStep.h" />
+    <ClInclude Include="CDlg_ending.h" />
+    <ClInclude Include="CDlg_ending2.h" />
     <ClInclude Include="CDlg_library.h" />
     <ClInclude Include="CDlg_secretRoom.h" />
     <ClInclude Include="CDlg_tabControls.h" />
@@ -201,6 +203,8 @@
   <ItemGroup>
     <ClCompile Include="CDlg_bedRoom.cpp" />
     <ClCompile Include="CDlg_doorStep.cpp" />
+    <ClCompile Include="CDlg_ending.cpp" />
+    <ClCompile Include="CDlg_ending2.cpp" />
     <ClCompile Include="CDlg_library.cpp" />
     <ClCompile Include="CDlg_secretRoom.cpp" />
     <ClCompile Include="CDlg_tabControls.cpp" />
@@ -224,6 +228,14 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\doorStep_Image.bmp" />
+    <Image Include="res\magic_mirror2.bmp" />
+    <Image Include="res\magic_mirror2.png" />
+    <Image Include="res\miror_text11.bmp" />
+    <Image Include="res\mirror_text1.bmp" />
+    <Image Include="res\mirror_text11.bmp" />
+    <Image Include="res\mirror_text22.bmp" />
+    <Image Include="res\mirror_text33.bmp" />
+    <Image Include="res\mirror_text44.bmp" />
     <Image Include="res\ROOMESCAPE.ico" />
     <Image Include="res\ROOMESCAPEDoc.ico" />
     <Image Include="res\secret_room5.bmp" />

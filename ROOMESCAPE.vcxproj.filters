@@ -57,6 +57,12 @@
     <ClInclude Include="CDlg_tabControls.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CDlg_ending.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlg_ending2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ROOMESCAPE.cpp">
@@ -92,6 +98,12 @@
     <ClCompile Include="CDlg_tabControls.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="CDlg_ending.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_ending2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ROOMESCAPE.rc">
@@ -117,6 +129,30 @@
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="res\doorStep_Image.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\magic_mirror2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\magic_mirror2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_text1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\miror_text11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_text11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_text22.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_text33.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_text44.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>
