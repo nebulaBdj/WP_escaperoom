@@ -24,6 +24,10 @@
 #define IDB_BITMAP_MIRRORTEXT44         333
 #define IDD_DIALOG1                     334
 #define IDD_DIALOG_ENDING2              334
+#define IDB_BITMAP_BEDROOM              336
+#define IDD_DLG_BEDROOM_SAFETY          337
+#define IDB_BITMAP_BEDROOM_SAFETY       338
+#define IDD_DLG_BEDROOM_QUIZ            341
 #define IDC_TAB1                        1000
 #define IDC_TABCONTROL                  1000
 #define IDC_STATIC_SECRET_PICTURECONTROL 1001
@@ -33,14 +37,20 @@
 #define IDC_BUTTON_ENDING_PREV          1005
 #define IDC_BUTTON_ENDING_ACTION1       1006
 #define IDC_BUTTON_ENDING_ACTION2       1007
+#define IDC_STATIC_BEDROOM              1008
+#define IDC_STATIC_BEDROOM_SAFETY       1009
+#define IDC_STATIC_BEDROOM_QUIZ         1010
+#define IDC_EDIT_BEDROOM_QUIZ_USERANSWER 1011
+#define IDC_BUTTON1                     1012
+#define IDC_BUTTON_BEDROOM_QUIZ_BUTTON  1012
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        336
+#define _APS_NEXT_RESOURCE_VALUE        343
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1008
+#define _APS_NEXT_CONTROL_VALUE         1013
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif
