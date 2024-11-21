@@ -190,6 +190,10 @@
     <ClInclude Include="CDlg_ending.h" />
     <ClInclude Include="CDlg_ending2.h" />
     <ClInclude Include="CDlg_library.h" />
+    <ClInclude Include="CDlg_library_answer.h" />
+    <ClInclude Include="CDlg_library_journey.h" />
+    <ClInclude Include="CDlg_library_minigame.h" />
+    <ClInclude Include="CDlg_library_mirror.h" />
     <ClInclude Include="CDlg_secretRoom.h" />
     <ClInclude Include="CDlg_tabControls.h" />
     <ClInclude Include="ChildFrm.h" />
@@ -210,6 +214,10 @@
     <ClCompile Include="CDlg_ending.cpp" />
     <ClCompile Include="CDlg_ending2.cpp" />
     <ClCompile Include="CDlg_library.cpp" />
+    <ClCompile Include="CDlg_library_answer.cpp" />
+    <ClCompile Include="CDlg_library_journey.cpp" />
+    <ClCompile Include="CDlg_library_minigame.cpp" />
+    <ClCompile Include="CDlg_library_mirror.cpp" />
     <ClCompile Include="CDlg_secretRoom.cpp" />
     <ClCompile Include="CDlg_tabControls.cpp" />
     <ClCompile Include="ChildFrm.cpp" />
@@ -233,7 +241,12 @@
   <ItemGroup>
     <Image Include="res\Bedroom.bmp" />
     <Image Include="res\Bedroom_Safety.bmp" />
+    <Image Include="res\bitmap2.bmp" />
     <Image Include="res\doorStep_Image.bmp" />
+    <Image Include="res\Library.bmp" />
+    <Image Include="res\Library_Journey_Text.bmp" />
+    <Image Include="res\Library_Mirror.bmp" />
+    <Image Include="res\Library_Safe.bmp" />
     <Image Include="res\magic_mirror2.bmp" />
     <Image Include="res\magic_mirror2.png" />
     <Image Include="res\miror_text11.bmp" />

@@ -28,6 +28,14 @@
 #define IDD_DLG_BEDROOM_SAFETY          337
 #define IDB_BITMAP_BEDROOM_SAFETY       338
 #define IDD_DLG_BEDROOM_QUIZ            341
+#define IDB_BITMAP_LIBRARY              344
+#define IDB_BITMAP_LIBRARY_JOURNEY_TEXT 345
+#define IDB_BITMAP_LIBRARY_MIRROR       346
+#define IDB_BITMAP_LIBRARY_SAFE         347
+#define IDD_DLG_LIBRARY_MIRROR          348
+#define IDD_DLG_LIBRARY_ANSWER          349
+#define IDD_DLG_LIBRARY_MINIGAME        350
+#define IDD_DLG_LIBRARY_JOURNEY         351
 #define IDC_TAB1                        1000
 #define IDC_TABCONTROL                  1000
 #define IDC_STATIC_SECRET_PICTURECONTROL 1001
@@ -43,14 +51,21 @@
 #define IDC_EDIT_BEDROOM_QUIZ_USERANSWER 1011
 #define IDC_BUTTON1                     1012
 #define IDC_BUTTON_BEDROOM_QUIZ_BUTTON  1012
+#define IDC_EDIT_INPUT                  1013
+#define IDC_EDIT_LIBRARY_ANSWER         1013
+#define IDC_STATIC_LIBRARY              1014
+#define IDC_STATIC_LIBRARY_JOURNEY      1015
+#define IDC_STATIC_LIBRARY_SAFE         1016
+#define IDC_STATIC_LIBRARY_MIRROR       1017
+#define IDC_BUTTON_LIBRARY_OK           1018
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        343
+#define _APS_NEXT_RESOURCE_VALUE        356
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1013
+#define _APS_NEXT_CONTROL_VALUE         1019
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

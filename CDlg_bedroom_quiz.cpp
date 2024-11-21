@@ -75,7 +75,7 @@ void CDlg_bedroom_quiz::OnBnClickedButtonBedroomQuizButton()
 		AfxMessageBox(_T("금고가 열렸다."), MB_OK);
 		CDialogEx::OnOK();
 		CDlg_bedroom_safety safety;
-		if (safety.DoModal() == IDOK) {
+		if (safety.DoModal() == IDC_BUTTON_LIBRARY_OK) {
 			CDialogEx::OnOK();  // 금고 다이얼로그 종료
 
 		}
