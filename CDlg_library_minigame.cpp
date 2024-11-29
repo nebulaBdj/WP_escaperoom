@@ -6,6 +6,7 @@
 #include "afxdialogex.h"
 #include "CDlg_library_minigame.h"
 #include "CDlg_library_answer.h"
+#include "CDlg_tabControls.h"
 
 // CDlg_library_minigame 대화 상자
 
@@ -51,7 +52,7 @@ void CDlg_library_minigame::OnLButtonDown(UINT nFlags, CPoint point)
     // TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
     CDlg_library_answer ans;
 
-    AfxMessageBox(_T("영어 6자를 입력할 수 있는 금고가 있다."));
+    AfxMessageBox(_T("영어 6자를 입력할 수 있는 키패드가 있다."));
     if (ans.DoModal() == IDOK)  // 다이얼로그 표시
     {
         CString strCorrectAnswer = _T("REGRET");  // 정답 설정
@@ -62,6 +63,8 @@ void CDlg_library_minigame::OnLButtonDown(UINT nFlags, CPoint point)
                 {
                     AfxMessageBox(_T("(덜컹...) 어디선가 문이 열리는 소리가 났다."));
                     m_bLibrarySafeOpened = TRUE;
+                    secret_room_per = TRUE;
+                    
                     EndDialog(IDOK);
                 }
 

@@ -96,11 +96,17 @@ void CDlg_tabControls::OnSelchangeTabcontrol(NMHDR* pNMHDR, LRESULT* pResult)
 			m_previousIndex = 0;
 			break;
 		case 1: //침실
-			dlg_doorStep->ShowWindow(SW_HIDE);
-			dlg_bedRoom->ShowWindow(SW_SHOW);
-			dlg_library->ShowWindow(SW_HIDE);
-			dlg_secretRoom->ShowWindow(SW_HIDE);
-			m_previousIndex = 1;
+			if (bedRoom_key) {
+				dlg_doorStep->ShowWindow(SW_HIDE);
+				dlg_bedRoom->ShowWindow(SW_SHOW);
+				dlg_library->ShowWindow(SW_HIDE);
+				dlg_secretRoom->ShowWindow(SW_HIDE);
+				m_previousIndex = 1;
+			}
+			else {
+				AfxMessageBox(_T("문이 잠겨있다.. 열쇠가 필요하겠는데.."));
+				m_tabControl.SetCurSel(m_previousIndex);
+			}
 			break;
 		case 2: //서재
 			dlg_doorStep->ShowWindow(SW_HIDE);
@@ -110,15 +116,24 @@ void CDlg_tabControls::OnSelchangeTabcontrol(NMHDR* pNMHDR, LRESULT* pResult)
 			m_previousIndex = 2;
 			break;
 		case 3: //비밀방
-			dlg_doorStep->ShowWindow(SW_HIDE);
-			dlg_bedRoom->ShowWindow(SW_HIDE);
-			dlg_library->ShowWindow(SW_HIDE);
-			dlg_secretRoom->ShowWindow(SW_SHOW);
-			m_previousIndex = 3;
+			if (secret_room_per) {
+				dlg_doorStep->ShowWindow(SW_HIDE);
+				dlg_bedRoom->ShowWindow(SW_HIDE);
+				dlg_library->ShowWindow(SW_HIDE);
+				dlg_secretRoom->ShowWindow(SW_SHOW);
+				m_previousIndex = 3;
+			}
+			else {
+				AfxMessageBox(_T("???"));
+				m_tabControl.SetCurSel(m_previousIndex);
+			}
+
 			break;
 		}
 	}
 	*pResult = 0;
 }
+
+
 
 

@@ -107,6 +107,7 @@ void CDlg_doorStep::OnLButtonDown(UINT nFlags, CPoint point)
 		{
 			// 인벤토리에 아이템 추가 로직
 			AfxMessageBox(_T("열쇠를 챙겼다.."), MB_ICONINFORMATION);
+			bedRoom_key = TRUE;
 			// 예시: 실제 인벤토리 배열 또는 리스트에 추가하는 코드 작성
 		}
 		else

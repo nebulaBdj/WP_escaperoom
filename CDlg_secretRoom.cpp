@@ -69,13 +69,19 @@ void CDlg_secretRoom::OnLButtonDown(UINT nFlags, CPoint point)
 	// 클릭한 위치 확인
 	if (m_clickableRect.PtInRect(point)) // 클릭한 위치가 Rect 내에 있는지 확인
 	{
-		CWnd* pTabControl = GetParent();
-		CWnd* pDialog =  pTabControl->GetParent();
-		pDialog-> PostMessage(WM_CLOSE);
-		CRect rect(0, 0, 1600, 900);
+		if (mirror_count == 3) {
+			CWnd* pTabControl = GetParent();
+			CWnd* pDialog = pTabControl->GetParent();
+			pDialog->PostMessage(WM_CLOSE);
+			CRect rect(0, 0, 1600, 900);
 
-		CDlg_ending dlg_ending;
-		dlg_ending.DoModal();
+			CDlg_ending dlg_ending;
+			dlg_ending.DoModal();
+		}
+		else {
+			AfxMessageBox(_T("방을 좀 더 돌아다녀보아야 할 것 같다.."));
+		}
+
 	
 		//EndDialog(IDCANCEL);
 		//AfxMessageBox(_T("거울 클릭")); // 클릭되었을 때 실행할 동작

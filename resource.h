@@ -44,6 +44,7 @@
 #define IDC_TAB1                        1000
 #define IDC_TABCONTROL                  1000
 #define IDC_STATIC_SECRET_PICTURECONTROL 1001
+#define IDC_TABCONTROL2                 1001
 #define IDC_STATIC_MAGICMIRROR          1002
 #define IDC_STATIC_MIRRORTEXTBOX        1003
 #define IDC_BUTTON_ENDING_NEXT          1004

@@ -10,4 +10,9 @@
 // 여기에 미리 컴파일하려는 헤더 추가
 #include "framework.h"
 extern bool m_nBedroomItemGet;
+extern bool bedRoom_key;
+extern int mirror_count;
+extern bool door_step_isMirror;
+extern bool bedroom_isMirror;
+extern bool secret_room_per;
 #endif //PCH_H

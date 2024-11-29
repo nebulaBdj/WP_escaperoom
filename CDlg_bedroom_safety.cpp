@@ -39,11 +39,14 @@ void CDlg_bedroom_safety::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
 	CRect rectPaint(409, 429, 479, 492);  // 그리기 영역
-	if (rectPaint.PtInRect(point)) {
+	if (rectPaint.PtInRect(point) && !bedroom_isMirror) {
 		// 아이템 획득 메시지 박스
 		m_nBedroomItemGet = TRUE;
 		AfxMessageBox(_T("깨진 거울 조각이 하나 있다. 챙기자."), MB_OK);
 		m_nBedroomItemGet = true;
+		mirror_count++;
+		bedroom_isMirror = !bedroom_isMirror;
+
 		// 금고 다이얼로그 종료
 		CDialogEx::OnOK();  // DoModal()에서 반환하고 다이얼로그를 닫음
 

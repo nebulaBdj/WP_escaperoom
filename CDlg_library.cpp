@@ -122,14 +122,14 @@ void CDlg_library::OnLButtonDown(UINT nFlags, CPoint point)
     if (m_pDlgLibraryMiniGame && m_pDlgLibraryMiniGame->m_bLibrarySafeOpened)
     {
         if (m_rectLibraryMiniGame.PtInRect(point)) {
-            AfxMessageBox(_T("금고는 이미 열었다."));
+            AfxMessageBox(_T("키패드에는 이미 정답을 입력했다."));
             return; // 다이얼로그를 열지 않고 반환
         }
     }
 
     // 거울 영역을 클릭했을 때
     if (PtInPolygon(point, m_mirrorPoints, 5)) {
-        AfxMessageBox(_T("거울을 클릭했습니다."));
+       //AfxMessageBox(_T("거울을 클릭했습니다."));
 
         // 거울 조각을 얻었는지 확인
         if (m_pDlgLibraryMirror == nullptr)
@@ -148,13 +148,13 @@ void CDlg_library::OnLButtonDown(UINT nFlags, CPoint point)
     }
 
     if (PtInPolygon(point, m_journeyPoints, 6)) {
-        AfxMessageBox(_T("일지를 클릭했습니다."));
+        //AfxMessageBox(_T("일지를 클릭했습니다."));
         CDlg_library_journey jour;
         jour.DoModal();
     }
 
     if (m_rectLibraryMiniGame.PtInRect(point)) {
-        AfxMessageBox(_T("금고를 클릭했습니다."));
+        //AfxMessageBox(_T("금고를 클릭했습니다."));
 
         // 거울 조각을 얻었는지 확인
         if (m_pDlgLibraryMiniGame == nullptr)
@@ -175,7 +175,7 @@ void CDlg_library::OnLButtonDown(UINT nFlags, CPoint point)
     strPos.Format(_T("클릭한 좌표: (%d, %d)"), point.x, point.y);
 
     // 좌표를 메시지 박스로 띄우기
-    AfxMessageBox(strPos);
+    //AfxMessageBox(strPos);
 
     CDialogEx::OnLButtonDown(nFlags, point);
 }
