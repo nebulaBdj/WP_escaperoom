@@ -172,7 +172,7 @@ void CDlg_library::OnLButtonDown(UINT nFlags, CPoint point)
         }
     }
     CString strPos;
-    strPos.Format(_T("클릭한 좌표: (%d, %d)"), point.x, point.y);
+    //strPos.Format(_T("클릭한 좌표: (%d, %d)"), point.x, point.y);
 
     // 좌표를 메시지 박스로 띄우기
     //AfxMessageBox(strPos);
