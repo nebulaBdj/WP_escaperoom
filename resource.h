@@ -41,6 +41,26 @@
 #define IDB_BITMAP_DOORSTEP_LETTER      358
 #define IDD_DLG_DOORSTEP_LETTER         359
 #define IDD_DIG_DOORSTEP_MIRROR         361
+#define IDB_BIT0MAP_TELEPHONE           363
+#define IDD_DIALOG_INVENTORY            364
+#define IDB_BITMAP_MIRRORFRAC1          366
+#define IDB_BITMAP_MIRRORFRAC2          367
+#define IDB_BITMAP_MIRRORFRAC3          368
+#define IDB_BITMAP_HALLKEY              369
+#define IDB_BITMAP_BEDROOMKEY2          370
+#define IDD_DIALOG_ENDING3              371
+#define IDD_DIALOG_BEDROOMHINT          373
+#define IDB_BITMAP_HINTMEMO             375
+#define IDB_BITMAP_SINOPSIS1            376
+#define IDB_BITMAP_SINOPSIS2            377
+#define IDB_BITMAP_SINOPSIS3            378
+#define IDB_BITMAP_SINOPSIS4            379
+#define IDB_BITMAP_ENDING1              380
+#define IDB_BITMAP_ENDING2              381
+#define IDB_BITMAP_ENDING3              382
+#define IDD_DIALOG_ENDING4              383
+#define IDD_DIALOG2                     385
+#define IDD_DIALOG_ENDING5              385
 #define IDC_TAB1                        1000
 #define IDC_TABCONTROL                  1000
 #define IDC_STATIC_SECRET_PICTURECONTROL 1001
@@ -68,14 +88,18 @@
 #define IDC_STATIC_MIRROR               1020
 #define IDC_STATIC_PICTURE1             1021
 #define IDC_STATIC_MAINHALL             1021
+#define IDC_STATIC_MIRRORFRAC1          1022
+#define IDC_STATIC_MIRRORFRAC3          1023
+#define IDC_STATIC_MIRRORFRAC2          1024
+#define IDC_STATIC_BEDROOMKEY2          1026
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        363
+#define _APS_NEXT_RESOURCE_VALUE        387
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1022
+#define _APS_NEXT_CONTROL_VALUE         1027
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

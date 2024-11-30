@@ -32,7 +32,6 @@ BEGIN_MESSAGE_MAP(CDlg_ending, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_ENDING_PREV, &CDlg_ending::OnClickedButtonEndingPrev)
 	ON_WM_PAINT()
     ON_BN_CLICKED(IDC_BUTTON_ENDING_ACTION1, &CDlg_ending::OnClickedButtonEndingAction1)
-    ON_BN_CLICKED(IDC_BUTTON_ENDING_ACTION2, &CDlg_ending::OnClickedButtonEndingAction2)
 END_MESSAGE_MAP()
 
 
@@ -94,7 +93,6 @@ void CDlg_ending::OnPaint()
                 pPictureCtrl->SetBitmap(hBitmap);
             }
             GetDlgItem(IDC_BUTTON_ENDING_ACTION1)->ShowWindow(SW_HIDE);
-            GetDlgItem(IDC_BUTTON_ENDING_ACTION2)->ShowWindow(SW_HIDE);
             GetDlgItem(IDC_BUTTON_ENDING_NEXT)->ShowWindow(SW_SHOW);
         }
         break;
@@ -112,7 +110,6 @@ void CDlg_ending::OnPaint()
                 pPictureCtrl->SetBitmap(hBitmap);
             }
             GetDlgItem(IDC_BUTTON_ENDING_ACTION1)->ShowWindow(SW_HIDE);
-            GetDlgItem(IDC_BUTTON_ENDING_ACTION2)->ShowWindow(SW_HIDE);
             GetDlgItem(IDC_BUTTON_ENDING_NEXT)->ShowWindow(SW_SHOW);
         }
         break;
@@ -130,7 +127,6 @@ void CDlg_ending::OnPaint()
                 pPictureCtrl->SetBitmap(hBitmap);
             }
             GetDlgItem(IDC_BUTTON_ENDING_ACTION1)->ShowWindow(SW_HIDE);
-            GetDlgItem(IDC_BUTTON_ENDING_ACTION2)->ShowWindow(SW_HIDE);
             GetDlgItem(IDC_BUTTON_ENDING_NEXT)->ShowWindow(SW_SHOW);
         }
         break;
@@ -149,7 +145,6 @@ void CDlg_ending::OnPaint()
             }
             //CButton* pButton_action1 = (CButton*)GetDlgItem(IDC_BUTTON_ACTION1);
             GetDlgItem(IDC_BUTTON_ENDING_ACTION1)->ShowWindow(SW_HIDE);
-            GetDlgItem(IDC_BUTTON_ENDING_ACTION2)->ShowWindow(SW_HIDE);
             GetDlgItem(IDC_BUTTON_ENDING_NEXT)->ShowWindow(SW_SHOW);
         }
         break;
@@ -161,7 +156,6 @@ void CDlg_ending::OnPaint()
                 ::DeleteObject(hOldBitmap);
             }
             GetDlgItem(IDC_BUTTON_ENDING_ACTION1)->ShowWindow(SW_SHOW);
-            GetDlgItem(IDC_BUTTON_ENDING_ACTION2)->ShowWindow(SW_SHOW);
             GetDlgItem(IDC_BUTTON_ENDING_NEXT)->ShowWindow(SW_HIDE);
         }
         break;
@@ -179,10 +173,4 @@ void CDlg_ending::OnClickedButtonEndingAction1()
     PostMessage(WM_CLOSE);
     CDlg_ending2 dlg_ending2; 
     dlg_ending2.DoModal();
-}
-
-
-void CDlg_ending::OnClickedButtonEndingAction2()
-{
-    // TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 }

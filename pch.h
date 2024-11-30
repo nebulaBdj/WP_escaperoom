@@ -14,5 +14,12 @@ extern bool bedRoom_key;
 extern int mirror_count;
 extern bool door_step_isMirror;
 extern bool bedroom_isMirror;
+extern bool library_isMirror;
 extern bool secret_room_per;
+
+extern bool mirror1_observer_once;
+extern bool mirror2_observer_once;
+extern bool mirror3_observer_once;
+extern bool bedroom_observer_once;
+extern bool secret_room_observer_once;
 #endif //PCH_H

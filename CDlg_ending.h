@@ -30,5 +30,4 @@ public:
 	afx_msg void OnPaint();
 	CDlg_ending2* dlg_ending2;
 	afx_msg void OnClickedButtonEndingAction1();
-	afx_msg void OnClickedButtonEndingAction2();
 };
