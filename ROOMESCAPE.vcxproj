@@ -186,11 +186,16 @@
     <ClInclude Include="CDlgLetter.h" />
     <ClInclude Include="CDlgMirror.h" />
     <ClInclude Include="CDlg_bedRoom.h" />
+    <ClInclude Include="CDlg_bedroomHint.h" />
     <ClInclude Include="CDlg_bedroom_quiz.h" />
     <ClInclude Include="CDlg_bedroom_safety.h" />
     <ClInclude Include="CDlg_doorStep.h" />
     <ClInclude Include="CDlg_ending.h" />
     <ClInclude Include="CDlg_ending2.h" />
+    <ClInclude Include="CDlg_ending3.h" />
+    <ClInclude Include="CDlg_ending4.h" />
+    <ClInclude Include="CDlg_ending5.h" />
+    <ClInclude Include="CDlg_inventory.h" />
     <ClInclude Include="CDlg_library.h" />
     <ClInclude Include="CDlg_library_answer.h" />
     <ClInclude Include="CDlg_library_journey.h" />
@@ -212,11 +217,16 @@
     <ClCompile Include="CDlgLetter.cpp" />
     <ClCompile Include="CDlgMirror.cpp" />
     <ClCompile Include="CDlg_bedRoom.cpp" />
+    <ClCompile Include="CDlg_bedroomHint.cpp" />
     <ClCompile Include="CDlg_bedroom_quiz.cpp" />
     <ClCompile Include="CDlg_bedroom_safety.cpp" />
     <ClCompile Include="CDlg_doorStep.cpp" />
     <ClCompile Include="CDlg_ending.cpp" />
     <ClCompile Include="CDlg_ending2.cpp" />
+    <ClCompile Include="CDlg_ending3.cpp" />
+    <ClCompile Include="CDlg_ending4.cpp" />
+    <ClCompile Include="CDlg_ending5.cpp" />
+    <ClCompile Include="CDlg_inventory.cpp" />
     <ClCompile Include="CDlg_library.cpp" />
     <ClCompile Include="CDlg_library_answer.cpp" />
     <ClCompile Include="CDlg_library_journey.cpp" />
@@ -244,10 +254,16 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\Bedroom.bmp" />
+    <Image Include="res\bedroom_key.bmp" />
+    <Image Include="res\bedroom_key2.bmp" />
     <Image Include="res\Bedroom_Safety.bmp" />
     <Image Include="res\bitmap2.bmp" />
     <Image Include="res\BrokenMirror.bmp" />
     <Image Include="res\doorStep_Image.bmp" />
+    <Image Include="res\ending1.bmp" />
+    <Image Include="res\ending2.bmp" />
+    <Image Include="res\ending3.bmp" />
+    <Image Include="res\hint_memo.bmp" />
     <Image Include="res\Library.bmp" />
     <Image Include="res\Library_Journey_Text.bmp" />
     <Image Include="res\Library_Mirror.bmp" />
@@ -255,6 +271,9 @@
     <Image Include="res\magic_mirror2.bmp" />
     <Image Include="res\magic_mirror2.png" />
     <Image Include="res\miror_text11.bmp" />
+    <Image Include="res\mirror_frac1.bmp" />
+    <Image Include="res\mirror_frac2.bmp" />
+    <Image Include="res\mirror_frac3.bmp" />
     <Image Include="res\mirror_text1.bmp" />
     <Image Include="res\mirror_text11.bmp" />
     <Image Include="res\mirror_text22.bmp" />
@@ -264,7 +283,12 @@
     <Image Include="res\ROOMESCAPE.ico" />
     <Image Include="res\ROOMESCAPEDoc.ico" />
     <Image Include="res\secret_room5.bmp" />
+    <Image Include="res\sinopsis1.bmp" />
+    <Image Include="res\sinopsis2.bmp" />
+    <Image Include="res\sinopsis3.bmp" />
+    <Image Include="res\sinopsis4.bmp" />
     <Image Include="res\Talyer_letter.bmp" />
+    <Image Include="res\telephone3.bmp" />
     <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

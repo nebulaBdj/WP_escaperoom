@@ -87,6 +87,21 @@
     <ClInclude Include="CDlgLetter.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CDlg_inventory.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlg_ending3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlg_bedroomHint.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlg_ending4.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlg_ending5.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ROOMESCAPE.cpp">
@@ -150,6 +165,21 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CDlgLetter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_inventory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_ending3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_bedroomHint.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_ending4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_ending5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -231,6 +261,48 @@
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="res\Talyer_letter.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\telephone3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_frac1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_frac2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\mirror_frac3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bedroom_key.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bedroom_key2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\hint_memo.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sinopsis1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sinopsis2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sinopsis3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sinopsis4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ending1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ending2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ending3.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

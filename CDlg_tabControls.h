@@ -32,6 +32,8 @@ public:
 	CDlg_library* dlg_library;
 	CDlg_secretRoom* dlg_secretRoom;
 	int m_previousIndex;
+	void insertSecretRoom();
 	virtual BOOL OnInitDialog();
 	afx_msg void OnClickedButton1();
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 };

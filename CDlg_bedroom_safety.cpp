@@ -29,6 +29,8 @@ void CDlg_bedroom_safety::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CDlg_bedroom_safety, CDialogEx)
 	ON_WM_LBUTTONDOWN()
+	ON_WM_MOUSEMOVE()
+	ON_WM_SETCURSOR()
 END_MESSAGE_MAP()
 
 
@@ -38,7 +40,7 @@ END_MESSAGE_MAP()
 void CDlg_bedroom_safety::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
-	CRect rectPaint(409, 429, 479, 492);  // 그리기 영역
+	CRect rectPaint(389, 409, 499, 512);  // 그리기 영역
 	if (rectPaint.PtInRect(point) && !bedroom_isMirror) {
 		// 아이템 획득 메시지 박스
 		m_nBedroomItemGet = TRUE;
@@ -52,4 +54,46 @@ void CDlg_bedroom_safety::OnLButtonDown(UINT nFlags, CPoint point)
 
 	}
 	CDialogEx::OnLButtonDown(nFlags, point);
+}
+
+
+BOOL CDlg_bedroom_safety::OnInitDialog()
+{
+	CDialogEx::OnInitDialog();
+
+	// TODO:  여기에 추가 초기화 작업을 추가합니다.
+	CRect rect(300, 300, 1200, 1200);
+	MoveWindow(&rect);
+	return TRUE;  // return TRUE unless you set the focus to a control
+	// 예외: OCX 속성 페이지는 FALSE를 반환해야 합니다.
+}
+
+
+
+void CDlg_bedroom_safety::OnMouseMove(UINT nFlags, CPoint point)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	CRect rectPaint(389, 409, 499, 512);  // 그리기 영역
+
+	if (rectPaint.PtInRect(point)) {
+		if (!safety_is_hover) {
+			safety_is_hover = true;
+			::SetCursor(AfxGetApp()->LoadStandardCursor(IDC_HAND)); // 손 모양 커서
+		}
+	}
+	else {
+		if (safety_is_hover) {
+			safety_is_hover = false;
+			::SetCursor(AfxGetApp()->LoadStandardCursor(IDC_ARROW)); // 기본 커서
+		}
+	}
+	CDialogEx::OnMouseMove(nFlags, point);
+}
+
+
+BOOL CDlg_bedroom_safety::OnSetCursor(CWnd* pWnd, UINT nHitTest, UINT message)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+
+	return true;
 }

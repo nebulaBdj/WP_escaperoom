@@ -56,17 +56,17 @@ BOOL CDlg_doorStep::OnInitDialog()
 	doorstep_is_hober = false;
 
 	// 사각형 영역 초기화
-	m_doorstep_guestBookRect.SetRect(718, 512, 884, 522); // 임의의 좌표 예시
-	m_doorstep_letterRect.SetRect(420, 768, 986, 829);
-	m_doorstep_curios.SetRect(919, 777, 1247, 832);
+	m_doorstep_guestBookRect.SetRect(718, 482, 884, 522); // 임의의 좌표 예시
+	m_doorstep_letterRect.SetRect(420, 700, 900, 829);
+	m_doorstep_curios.SetRect(940, 700, 1300, 832);
 	m_doorstep_chandelier.SetRect(616, 13, 978, 207);
-	m_doorstep_getMirror.SetRect(973, 564, 1167, 593);
+	m_doorstep_getMirror.SetRect(973, 504, 1167, 573);
 
-	m_doorstep_clickableRect_guestBookRect.SetRect(718, 512, 884, 522);
-	m_doorstep_clickableRect_letterRect.SetRect(420, 768, 986, 829);
-	m_doorstep_clickableRect_curios.SetRect(919, 777, 1247, 832);
+	m_doorstep_clickableRect_guestBookRect.SetRect(718, 482, 884, 522);
+	m_doorstep_clickableRect_letterRect.SetRect(420, 700, 900, 829);
+	m_doorstep_clickableRect_curios.SetRect(940, 700, 1300, 832);
 	m_doorstep_clickableRect_chandelier.SetRect(616, 13, 978, 207);
-	m_doorstep_clickableRect_getMirror.SetRect(973, 564, 1167, 593);
+	m_doorstep_clickableRect_getMirror.SetRect(973, 504, 1167, 573);
 
 
 	return TRUE; // 대화 상자 초기화 성공
@@ -76,8 +76,8 @@ void CDlg_doorStep::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	//클릭 좌표 위치 보여주는 코드
 	CString strCoordinates;
-	strCoordinates.Format(_T("클릭한 좌표: (%d, %d)"), point.x, point.y);
-	AfxMessageBox(strCoordinates);
+	//strCoordinates.Format(_T("클릭한 좌표: (%d, %d)"), point.x, point.y);
+	//AfxMessageBox(strCoordinates);
 
 	// 클릭 위치가 특정 사각형에 포함되는지 확인
 	if (m_doorstep_guestBookRect.PtInRect(point))
@@ -97,7 +97,7 @@ void CDlg_doorStep::OnLButtonDown(UINT nFlags, CPoint point)
 			AfxMessageBox(_T("죽은 자의 편지를 읽는건 역시 꺼림직하다."), MB_ICONWARNING);
 		}
 	}
-	else if (m_doorstep_curios.PtInRect(point))
+	else if (m_doorstep_curios.PtInRect(point) && !bedRoom_key)
 	{
 		AfxMessageBox(_T("고가의 골동품이다. 곳곳에 관리가 잘 된 골동품이 보인다"));
 		int result3 = AfxMessageBox(_T("골동품을 구경을 위해 들어봤더니 그 아래 열쇠가 보인다."
@@ -119,7 +119,7 @@ void CDlg_doorStep::OnLButtonDown(UINT nFlags, CPoint point)
 	{
 		AfxMessageBox(_T("상당한 고가의 샹들리에다. 이 저택의 주인은 분명 대부호겠지."), MB_ICONINFORMATION);
 	}
-	else if (m_doorstep_getMirror.PtInRect(point))
+	else if (m_doorstep_getMirror.PtInRect(point) && !door_step_isMirror)
 	{
 		int result4 = AfxMessageBox(_T("서랍을 열어보니 깨진 거울 조각이 보인다."
 			"자세히 살펴볼까??"), MB_YESNO | MB_ICONQUESTION);

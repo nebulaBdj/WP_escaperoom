@@ -15,7 +15,7 @@ IMPLEMENT_DYNAMIC(CDlg_bedroom_quiz, CDialogEx)
 CDlg_bedroom_quiz::CDlg_bedroom_quiz(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_DLG_BEDROOM_QUIZ, pParent)
 	, m_strBedroomQuizUser(_T(""))
-	, m_strBedroomQuizCorrect(_T("7321"))
+	, m_strBedroomQuizCorrect(_T("5683"))
 {
 
 	

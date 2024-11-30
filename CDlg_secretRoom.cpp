@@ -68,15 +68,20 @@ void CDlg_secretRoom::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	// 클릭한 위치 확인
 	if (m_clickableRect.PtInRect(point)) // 클릭한 위치가 Rect 내에 있는지 확인
-	{
+	{	
 		if (mirror_count == 3) {
-			CWnd* pTabControl = GetParent();
-			CWnd* pDialog = pTabControl->GetParent();
-			pDialog->PostMessage(WM_CLOSE);
-			CRect rect(0, 0, 1600, 900);
+			if (AfxMessageBox(_T("깨진 거울이 눈앞에 있다... 내가 가진 조각들로 원래 모습을 복원할 수 있을 것 같은데, 시도해볼까?"), MB_OKCANCEL) == IDOK) {
+				door_step_isMirror = false;
+				bedroom_isMirror = false;
+				library_isMirror = false;
+				CWnd* pTabControl = GetParent();
+				CWnd* pDialog = pTabControl->GetParent();
+				pDialog->PostMessage(WM_CLOSE);
+				CRect rect(0, 0, 1600, 900);
 
-			CDlg_ending dlg_ending;
-			dlg_ending.DoModal();
+				CDlg_ending dlg_ending;
+				dlg_ending.DoModal();
+			}
 		}
 		else {
 			AfxMessageBox(_T("방을 좀 더 돌아다녀보아야 할 것 같다.."));

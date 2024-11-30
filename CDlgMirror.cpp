@@ -45,8 +45,8 @@ void CDlgMirror::OnClose()
 	// 다이얼로그가 닫힐 때 메시지 출력
 	int choice = AfxMessageBox(_T("소중하게 보관되어 있던 깨진 거울 조각이다."
 		"\n사건 해결에는 관련이 없어보이지만.. 챙겨야 할까?"), MB_YESNO | MB_ICONQUESTION);
-	if (choice == IDYES && !door_step_isMirror) {
-		AfxMessageBox(_T("유리 조각을 조심스럽게 가방에 넣었다."));
+	if (choice == IDYES) {
+		AfxMessageBox(_T("거울 조각을 조심스럽게 가방에 넣었다."));
 		mirror_count += 1;
 		door_step_isMirror = !door_step_isMirror;
 	}

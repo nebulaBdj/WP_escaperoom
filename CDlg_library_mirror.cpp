@@ -79,6 +79,7 @@ void CDlg_library_mirror::OnLButtonDown(UINT nFlags, CPoint point)
 			// 아직 조각을 획득하지 않은 경우
 			AfxMessageBox(_T("거울 조각을 얻었다."));
 			m_bLibraryMirrorPieceObtained = true; // 상태 업데이트: 조각 획득
+			library_isMirror = true;
 			mirror_count++;
 			EndDialog(IDOK);
 		}

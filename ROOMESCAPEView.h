@@ -2,6 +2,7 @@
 // ROOMESCAPEView.h: CROOMESCAPEView 클래스의 인터페이스
 //
 #include "CDlg_tabControls.h"
+#include "CDlg_inventory.h"
 #pragma once
 
 
@@ -42,6 +43,13 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnRButtonDown(UINT nFlags, CPoint point);
+	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+	virtual void OnInitialUpdate();
+	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
+	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
+	bool view_is_Hover;
+	int view_count;
+	afx_msg BOOL OnSetCursor(CWnd* pWnd, UINT nHitTest, UINT message);
 };
 
 #ifndef _DEBUG  // ROOMESCAPEView.cpp의 디버그 버전
