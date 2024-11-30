@@ -69,6 +69,9 @@
     <ClInclude Include="CDlg_bedroom_quiz.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CDlg_ending3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ROOMESCAPE.cpp">
@@ -114,6 +117,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CDlg_bedroom_quiz.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlg_ending3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

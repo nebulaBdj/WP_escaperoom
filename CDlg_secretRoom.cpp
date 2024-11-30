@@ -52,7 +52,8 @@ BOOL CDlg_secretRoom::OnInitDialog()
 	// 다이얼로그 크기 가져오기
 	CRect clientRect;
 	GetClientRect(&clientRect);
-	// 화면 중앙에 500x500 크기의 Rect 설정
+
+	// 거울 위치에 해당하는 가상의 사각형 위치 지정
 	int width = 200;
 	int height = 300;
 	int left = 720;
@@ -71,7 +72,7 @@ void CDlg_secretRoom::OnLButtonDown(UINT nFlags, CPoint point)
 	{
 		CWnd* pTabControl = GetParent();
 		CWnd* pDialog =  pTabControl->GetParent();
-		pDialog-> PostMessage(WM_CLOSE);
+		pDialog->PostMessage(WM_CLOSE);
 		CRect rect(0, 0, 1600, 900);
 
 		CDlg_ending dlg_ending;

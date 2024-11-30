@@ -50,7 +50,15 @@ BOOL CDlg_tabControls::OnInitDialog()
 	m_tabControl.InsertItem(2, _T("서재"));
 	m_tabControl.InsertItem(3, _T("???"));
 	m_tabControl.SetCurSel(0);
-	m_previousIndex = 0;
+	m_previousIndex = 0;;
+
+	//이거 있어야 함 기억하기
+	TCITEM item = { 0 };
+	item.mask = TCIF_TEXT; // 텍스트 변경을 지정
+	item.pszText = _T("새 이름"); // 새 이름 설정
+
+	// 3번 탭의 이름 변경
+	m_tabControl.SetItem(3, &item);
 
 	CRect rect(0, 0, 1600, 900);
 	m_tabControl.MoveWindow(&rect);

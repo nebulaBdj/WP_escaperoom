@@ -28,6 +28,8 @@
 #define IDD_DLG_BEDROOM_SAFETY          337
 #define IDB_BITMAP_BEDROOM_SAFETY       338
 #define IDD_DLG_BEDROOM_QUIZ            341
+#define IDD_DIALOG2                     343
+#define IDD_DIALOG_ENDING3              343
 #define IDC_TAB1                        1000
 #define IDC_TABCONTROL                  1000
 #define IDC_STATIC_SECRET_PICTURECONTROL 1001
@@ -48,7 +50,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        343
+#define _APS_NEXT_RESOURCE_VALUE        345
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1013
 #define _APS_NEXT_SYMED_VALUE           310

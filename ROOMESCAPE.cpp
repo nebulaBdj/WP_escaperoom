@@ -182,6 +182,8 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 	ON_WM_RBUTTONDOWN()
+	ON_WM_PAINT()
+	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
 // 대화 상자를 실행하기 위한 응용 프로그램 명령입니다.
